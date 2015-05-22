@@ -1,0 +1,23 @@
+nav {
+    display: block;
+    vertical-align: left;
+    padding: 30px;
+    min-height: 100px;
+
+
+    ul li {
+        display: inline;
+        float: right;
+        padding: 0 15px;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+}
+
+h1.branding-title {
+        color: $cubBlue;
+        text-decoration: none;
+        display: inline;
+        font-size: 3em;
+        float: left;
+    }

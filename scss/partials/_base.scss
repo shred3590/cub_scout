@@ -1,0 +1,12 @@
+@import "../modules/_var.scss";
+html {
+    position: relative;
+    min-height: 100%;
+    background: $cubBlue;
+    background-image: linear-gradient(180deg, $cubYellow 10%, $cubBlue 90%);
+}
+//
+//.container {
+//    width: 90%;
+//    align-content: center;
+//}
