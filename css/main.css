@@ -400,8 +400,25 @@ th {
 html {
   position: relative;
   min-height: 100%;
-  background: #003F87;
+  background: #FCD116;
   background-image: linear-gradient(180deg, #FCD116 10%, #003F87 90%); }
+
+/* line 9, ../scss/partials/_base.scss */
+body {
+  font: normal 1.1em/1.5 sans-serif;
+  color: #003F87; }
+
+/* line 14, ../scss/partials/_base.scss */
+.main-container {
+  width: 90%;
+  margin: auto;
+  background: rgba(225, 225, 225, 0.3); }
+
+/* line 20, ../scss/partials/_base.scss */
+footer {
+  color: #FCD116;
+  font-size: .7em;
+  margin: auto; }
 
 /* line 1, ../scss/partials/_nav.scss */
 nav {
@@ -416,8 +433,37 @@ nav {
     padding: 0 15px;
     font-size: 1.5em;
     text-decoration: none; }
+  @media (min-width: 769) {
+    /* line 16, ../scss/partials/_nav.scss */
+    nav body {
+      padding-top: 120px; }
+    /* line 20, ../scss/partials/_nav.scss */
+    nav .main-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 120px; }
+    /* line 26, ../scss/partials/_nav.scss */
+    nav nav {
+      display: flex;
+      height: 100%; }
+    /* line 30, ../scss/partials/_nav.scss */
+    nav nav li {
+      margin-left: 8px;
+      margin-right: 8px;
+      align-self: center;
+      flex-grow: 1;
+      transition: .5s; }
+      /* line 36, ../scss/partials/_nav.scss */
+      nav nav li :hover:not(.main-logo) {
+        flex-grow: 2; }
+    /* line 40, ../scss/partials/_nav.scss */
+    nav nav.no-flexbox li {
+      display: inline-block;
+      margin-top: 12px;
+      width: 150px; } }
 
-/* line 17, ../scss/partials/_nav.scss */
+/* line 48, ../scss/partials/_nav.scss */
 h1.branding-title {
   color: #003F87;
   text-decoration: none;
@@ -442,6 +488,13 @@ h1.branding-title {
   left: 0;
   width: 100%;
   height: 100%; }
+
+/* line 21, ../scss/partials/_iframe.scss */
+.google_cal {
+  width: 90%;
+  height: 90%;
+  min-height: 300px;
+  min-width: 400px; }
 
 /* This provides for a footer to the bottom of the page or scrolls off the bottom */
 /* line 4, ../scss/partials/_footer.scss */

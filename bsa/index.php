@@ -1,6 +1,6 @@
 <?php // http://www.scouting.org/
 
-require("../inc/config.php");
+require_once("../inc/config.php");
 $pageTitle = "BSA Home Page";
 $section = "bsa";
 $description = "Link to BSA home page.";

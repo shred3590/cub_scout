@@ -2,9 +2,16 @@
 //include("config.php");
 
 ?>
-     <nav class="wrapper">
-         <img class="branding" src="<?php ROOT_PATH . "img/Logo_nb.png" ?>"/>
-      	<h1 class="branding-title"><a href="<?php echo BASE_URL; ?>">Pack 198</a></h1>
+     <nav class="nav-wrapper">
+<!--
+        <img src="../img/logo_nb.png" height=100px width=100px/>
+         <img class="branding" src="../img/logo_nb.png"/>
+-->
+      	<h1 class="branding-title">
+           <a href="<?php echo BASE_URL; ?>">
+                <img src=<?php echo '"' . BASE_URL . 'img/logo_nb.png"'; ?> height=100px width=100px/>
+            </a></h1>
+
 			<ul>
 				<?php
 

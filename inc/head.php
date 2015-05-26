@@ -1,6 +1,6 @@
 <?php
 // This file is included in the Header ONLY
-require_once("config.php");
+//require_once("config.php");
 ?>
    <head>
         <meta charset="utf-8">
@@ -12,5 +12,5 @@ require_once("config.php");
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--        <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
         <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/main.css">
-        <script src="<?php echo BASE_URL; ?>js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="<?php echo BASE_URL; ?>js/vendor/modernizr.custom.85807.js"></script>
     </head>
