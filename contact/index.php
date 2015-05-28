@@ -89,7 +89,7 @@ include(ROOT_PATH . 'inc/header.php'); ?>
             <?php } else {
 
                     if (!isset($error_message)) {
-                        echo '<p>I&rsquo;d love to hear from you! Complete the form to send me an email.</p>';
+                        echo '<p>We would love to hear from you! Complete the form to send us an email.</p>';
                     } else {
                         echo '<p class="message">' . $error_message . '</p>';
                     }

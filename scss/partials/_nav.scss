@@ -1,15 +1,24 @@
+
+
 nav {
     display: block;
     vertical-align: left;
     padding: 30px;
     min-height: 100px;
 
+	h1.branding-title {
+        color: $cubBlue;
+        text-decoration: none;
+        display: inline;
+        font-size: 3em;
+        float: left;
+	}
+
 
     ul li {
-        display: inline;
-        float: right;
-        padding: 0 15px;
-        font-size: 1.5em;
+        display: inline-block;
+		margin-top: 12px;
+		width: 200px;
         text-decoration: none;
     }
     @media (min-width: 769){
@@ -26,16 +35,21 @@ nav {
         nav {
             display: flex;
             height: 100%;
-        }
-        nav li {
-            margin-left: 8px;
-            margin-right: 8px;
-            align-self: center;
-            flex-grow: 1;
-            transition: .5s;
-            :hover:not(.main-logo) {
-                flex-grow: 2;
-            }
+
+
+			nav li {
+				margin-left: 8px;
+				margin-right: 8px;
+				align-self: center;
+				flex-grow: 1;
+				transition: .5s;
+				:hover:not(.main-logo) {
+					flex-grow: 2;
+				}
+				.on {
+					text-decoration: underline;
+				}
+			}
         }
         nav.no-flexbox li {
             display: inline-block;
@@ -45,10 +59,4 @@ nav {
     }
 }
 
-h1.branding-title {
-        color: $cubBlue;
-        text-decoration: none;
-        display: inline;
-        font-size: 3em;
-        float: left;
-    }
+

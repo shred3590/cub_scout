@@ -19,9 +19,12 @@
 }
 
 .google_cal {
+    //@mixin google-ratio(90%);
+    display: block;
     width: 90%;
-    height: 90%;
-    min-height: 300px;
-    min-width: 400px;
+    margin: auto;
+
+//    min-height: 300px;
+//    min-width: 400px;
 }
 

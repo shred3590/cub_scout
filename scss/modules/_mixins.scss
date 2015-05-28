@@ -1,1 +1,7 @@
-@mixin
+//width="800" height="600"
+@mixin google-ratio($width) {
+    width: $width;
+    height: $width * 0.75;
+}
+
+

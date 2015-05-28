@@ -420,6 +420,10 @@ footer {
   font-size: .7em;
   margin: auto; }
 
+/* line 26, ../scss/partials/_base.scss */
+.yellow {
+  color: #FCD116; }
+
 /* line 1, ../scss/partials/_nav.scss */
 nav {
   display: block;
@@ -491,10 +495,9 @@ h1.branding-title {
 
 /* line 21, ../scss/partials/_iframe.scss */
 .google_cal {
+  display: block;
   width: 90%;
-  height: 90%;
-  min-height: 300px;
-  min-width: 400px; }
+  margin: auto; }
 
 /* This provides for a footer to the bottom of the page or scrolls off the bottom */
 /* line 4, ../scss/partials/_footer.scss */
