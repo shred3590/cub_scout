@@ -7,7 +7,7 @@ include_once(ROOT_PATH . "inc/header.php");
 ?>
 <div class="main-container">
     <h1>Cub Scout Den Structure</h1>
-    <p>The Cub Scouts are packs sposored by an organization.  The pack is often comprises of boys from a school or church.  Sometimes a pack will include several schools.</p>
+    <p>The Cub Scouts are packs sposored by an organization.  The pack is often comprises of boys from a school or church.  Sometimes a pack will include several schools.  Most members of Pack 198 are from West Tualatin View Elementary School.</p>
     <p>Each pack is divided into dens.  First grade boys start out as Tiger Cubs.  After they have completed the requirements for the Tiger Badge, they progress to being a Wolf Cub.  However, they typically stay in the same den.</p>
     <p>During second grade, the Wolf Cubs work on becoming Bear Cubs.  The den activities are typically designed to ensure the Scouts complete all of the requirements for the Bear Badge by the end of the school year.</p>
     <p>Third grade is focused on completing the Bear Badge.  Once the Bear Badge is completed, they become Webelo I.</p>

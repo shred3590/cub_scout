@@ -54,9 +54,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email_body = $email_body . "Message: " . $message;
 
         $mail->SetFrom($email, $name);
-        $address = "lindasumner07@comcast.net";
-        $mail->AddAddress($address, "Creative Kinders");
-        $mail->Subject    = "Creative Kinders Contact Form Submission | " . $name;
+        $address = "joy@sifferle.net";
+        $mail->AddAddress($address, "jim@sifferle.net");
+        $mail->AddAddress($address, "teds@biblewordstudy.net");
+        $mail->Subject    = "Cub Scout Pack 198 | " . $name;
         $mail->MsgHTML($email_body);
 
         // if the email is sent successfully, redirect to a thank you page;
@@ -71,7 +72,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-?><?php
 $pageTitle = "Contact Pack 198";
 $section = "contact";
 $description = "Please fill out the form to send an email to Pack 198.";
@@ -79,7 +79,7 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 
     <div class="section page">
 
-        <div class="wrapper">
+        <div class="main-container">
 
             <h1>Contact</h1>
 

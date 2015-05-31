@@ -1,14 +1,6 @@
-/* This provides for a footer to the bottom of the page or scrolls off the bottom */
+/* This provides for a footer to the bottom of the page or scrolls off the bottom
+Make sure the body bottom margin is the same as teh footer height.  This is set up with the variable $footerHeight.  html min-height needs to be 100% also.*/
 
-
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-body {
-    margin: 0 0 $footerHeight; /* bottom = footer height */
-}
 
 footer {
     position: absolute;
@@ -16,4 +8,15 @@ footer {
     bottom: 0;
     height: $footerHeight;
     width: 100%;
+    color: $cubYellow;
+    font-size: .7em;
+    margin:auto;
+    text-align: center;
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
 }

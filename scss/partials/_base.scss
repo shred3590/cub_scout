@@ -1,33 +1,58 @@
+
 //@import "../modules/_var.scss";
+@import "../modules/mixins";
 html {
     position: relative;
     min-height: 100%;
     background: $cubYellow;
-    background-image: linear-gradient(180deg, $cubYellow 10%, $cubBlue 90%);
+    background-image: $background;
+
 }
 
 body {
 	font: normal 1.1em/1.5 sans-serif;
 	color: $cubBlue;
+    margin: 0 0 $footerHeight; /* bottom = footer height */
 }
 
 .main-container {
 	width: 90%;
+    padding: 0 2.5% 0% 2.5%;
 	margin: auto;
-    background: $el-bgnd;
+    margin-top: $header-height;
+    @include background-c();
 }
 
-footer {
-    color: $cubYellow;
-    font-size: .7em;
-    margin:auto;
+a {
+    text-decoration: none;
+    color: $link;
+    &:hover {
+        color: $hover;
+    }
+    &:focus {
+        color: $focus;
+    }
 }
 
-.yellow {
-    color: $cubYellow;
+li {
+   list-style: none;
 }
-//
-//.container {
-//    width: 90%;
-//    align-content: center;
-//}
+
+form {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    td {
+        padding: 5px 0 5px 10px;
+    }
+}
+
+textarea, input {
+    min-width: 220px;
+    width: 80%;
+
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}

@@ -4,4 +4,7 @@
     height: $width * 0.75;
 }
 
-
+//background semitransparent white
+@mixin background-c() {
+    background-color: $el-bgnd;
+}

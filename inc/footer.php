@@ -1,5 +1,5 @@
 
-    <footer>
+    <footer class="footer">
         <p>&copy;2015 Ted Sumner, site designer</p>
     </footer>
 

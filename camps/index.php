@@ -5,7 +5,7 @@ $section = "camps";
 $description = "Typical camps attended by scouts from Pack 198";
 include_once(ROOT_PATH . "inc/header.php");
 ?>
-<div class="container">
+<div class="main-container">
 	<h1>Cub Scout Summer Camps</h1>
 	<p>Summer camp is one of the highlights fo the Cub Scout program.  The Cascade Pacific Council has some of the <a href="http://www.cpcbsa.org/camping/camp-properties" target="_blank">premire camps</a> in the entire country and the boys look forward to exploring a new property each year as they progress through the Cub Scout experience.</p>
 	<p>The camp program begins with new Wolf Cubs attending <a href="http://www.cpcbsa.org/camping/camp-properties/ireland" target="_blank">Camp Ireland</a>.  It is a day program located in Hillsboro near Glenco High School.</p>

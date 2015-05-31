@@ -1,62 +1,126 @@
 
 
+//nav {
+//    display: block;
+//    vertical-align: left;
+//    padding: 30px;
+//    min-height: 100px;
+//
+//	.main-logo {
+//        color: $cubBlue;
+//        margin: -10, 0, 0;
+//
+//        text-decoration: none;
+//        display: inline;
+//        font-size: 3em;
+//        float: left;
+//	}
+//}
+//
+//
+//    ul li {
+//        display: inline-block;
+//		margin-top: 12px;
+//		width: 200px;
+//        text-decoration: none;
+//    }
+//    @media screen and (min-width: $med-break){
+//        nav {
+//            display: flex;
+//            height: 100%;
+//            margin: auto;
+//
+//            position: fixed;
+//            top: 0;
+//            width: 100%;
+//            height: 120px;
+//
+//        body {
+//            padding-top: 120px;
+//        }
+//
+//        .main-header {
+//            position: fixed;
+//            top: 0;
+//            width: 100%;
+//            height: 120px;
+//        }
+//
+//
+//
+//            li {
+//                margin-left: 8px;
+//                margin-right: 8px;
+//                align-self: center;
+//                flex-grow: 1;
+//                transition: .5s;
+//                :hover:not(.main-logo) {
+//                    flex-grow: 2;
+//                }
+//                .on {
+//                    text-decoration: underline;
+//                }
+//            }
+//        }
+//    }
+//nav.no-flexbox li {
+//    display: inline-block;
+//    margin-top: 12px;
+//    width: 150px;
+//}
+
+
+
+
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $header-height;
+}
+
 nav {
-    display: block;
-    vertical-align: left;
-    padding: 30px;
-    min-height: 100px;
+    margin: 0;
+    width: 100%;
+//    height: 100%;
+    z-index: 100;
+    opacity: 100;
+    background-color: $cubYellow;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px;
 
-	h1.branding-title {
-        color: $cubBlue;
-        text-decoration: none;
-        display: inline;
-        font-size: 3em;
-        float: left;
-	}
-
-
-    ul li {
-        display: inline-block;
-		margin-top: 12px;
-		width: 200px;
-        text-decoration: none;
+    ul {
+        display: -webkit-flex;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        li {
+            align-self: right;
+            flex-grow: 1;
+            margin: 0 8px;
+        }
     }
-    @media (min-width: 769){
-        body {
-            padding-top: 120px;
-        }
 
-        .main-header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 120px;
-        }
-        nav {
-            display: flex;
-            height: 100%;
+    @media screen and (min-width: $med-break) {
+        ul {
+            flex-direction: row;
 
-
-			nav li {
-				margin-left: 8px;
-				margin-right: 8px;
-				align-self: center;
-				flex-grow: 1;
-				transition: .5s;
-				:hover:not(.main-logo) {
-					flex-grow: 2;
-				}
-				.on {
-					text-decoration: underline;
-				}
-			}
-        }
-        nav.no-flexbox li {
-            display: inline-block;
-            margin-top: 12px;
-            width: 150px;
+            li a {
+                display: block;
+                font-size: 0.6em;
+                color: $cubYellow;
+                text-align: center;
+                padding: 8px 10px;
+                border-radius: 5px;
+                background-color: $button-color;
+            }
         }
     }
 }
 
-
+.main-logo:first-child {
+    margin-right: 50px;
+    flex-grow: 1.5;
+}
