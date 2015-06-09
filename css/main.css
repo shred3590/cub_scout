@@ -265,9 +265,6 @@ footer {
 }
 /* line 15, ../sass/partials/_footer.scss */
 footer p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  @inlcude translate(-50%, -50%);
+  margin: auto;
+  padding-top: 16.66667px;
 }

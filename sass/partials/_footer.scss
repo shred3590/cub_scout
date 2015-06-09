@@ -13,10 +13,8 @@ footer {
     margin:auto;
     text-align: center;
     p {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        @inlcude translate(-50%, -50%);
+        margin:auto;
+//        text-align: center;
+        padding-top: $footerHeight/3;
     }
 }
