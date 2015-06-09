@@ -11,6 +11,6 @@
         <meta name="description" content="<?php $description ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--        <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
-        <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/main.css">
+        <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/main.css" media="screen">
         <script src="<?php echo BASE_URL; ?>js/vendor/modernizr.custom.85807.js"></script>
     </head>

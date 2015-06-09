@@ -1,0 +1,86 @@
+
+//@import "../modules/_var.scss";
+@import "../modules/mixins";
+html {
+    position: relative;
+    min-height: 100%;
+    background: $cubYellow;
+    @include background-image(linear-gradient(180deg, $cubYellow $header-height, $cubBlue 90%));
+
+    margin: 0;
+    @media screen and (min-width: $med-break) {
+        @include background-image(linear-gradient(180deg, $cubYellow $header-height-large-screen, $cubBlue 90%));
+    }
+}
+
+
+body {
+	font: normal 1.1em/1.5 sans-serif;
+	color: $cubBlue;
+    margin: 0 0 $footerHeight; /* bottom = footer height */
+}
+
+.main-container {
+	width: 90%;
+    padding: 0 2.5% 0% 2.5%;
+	margin: auto;
+    margin-top: $header-height;
+    @include white-background();
+    @media screen and (min-width: $med-break) {
+        margin-top: $header-height-large-screen;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $link;
+    &:focus {
+        color: $focus;
+    }
+    &:hover {
+        color: $hover;
+    }
+}
+
+li {
+   list-style: none;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    td {
+        padding: 5px 0 5px 10px;
+    }
+}
+
+textarea, input {
+    min-width: 220px;
+    width: 80%;
+
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.group {
+    @include clearfix;
+}
+
+p {
+    text-indent: 50px;
+    &.yellow {
+        color: $cubYellow;
+    }
+    &.no-indent {
+        text-indent: 0;
+    }
+}
+
+p #yellow {
+    color: $cubYellow;
+}
+
+

@@ -1,6 +1,6 @@
 
     <footer class="footer">
-        <p>&copy;2015 Ted Sumner, site designer</p>
+        <p class="no-indent">&copy;2015 Ted Sumner, site designer</p>
     </footer>
 
     </div> <!-- /container -->

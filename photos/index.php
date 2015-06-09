@@ -5,5 +5,7 @@ $section = "photo";
 $description = "Photos of various Pack 198 functions";
 include_once(ROOT_PATH . "inc/header.php");
 ?>
-<h1>Under Construction</h1>
+<body class="main-container">
+    <h1>Under Construction</h1>
+</body>
 <?php include_once(ROOT_PATH . "inc/footer.php"); ?>
