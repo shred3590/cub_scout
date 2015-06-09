@@ -1,0 +1,48 @@
+/* Position iframe relatively to screen size */
+
+.myiframe {
+    position: relative;
+    padding-bottom: 90.25%;
+    padding-top: 30px;
+    height: 50%;
+    overflow: hidden;
+//    border: solid black 1px;
+    margin-top: 10px;
+    z-index: 50;
+}
+
+
+.myiframe iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 55;
+}
+
+.google_cal {
+    //@mixin google-ratio(90%);
+
+    width: 90%;
+    margin: auto;
+    &.small {
+        display: block;
+    }
+    &.large {
+        display: none;
+    }
+    @media screen and (min-width: $med-break) {
+        &.large {
+            display: block;
+        }
+        &.small {
+            display: none;
+        }
+    }
+
+//    min-height: 300px;
+//    min-width: 400px;
+}
+
