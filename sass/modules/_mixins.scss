@@ -25,7 +25,7 @@
 }
 
 @mixin white-background {
-    @include background-image(linear-gradient(180deg, transparent, rgba(225,225,225,0.5)));
+    @include background-image(linear-gradient(180deg, transparent, rgba(225,225,225,0.5) 90%));
 }
 
 //$el-bgrd: @include backgound-image(linear-gradient(180deg, transparent, rgba(225,225,225,0.5)))

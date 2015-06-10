@@ -24,7 +24,6 @@ body {
 	width: 90%;
     padding: 0 2.5% 0% 2.5%;
 	margin: auto;
-    margin-top: $header-height;
     @include white-background();
     @media screen and (min-width: $med-break) {
         margin-top: $header-height-large-screen;
