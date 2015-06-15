@@ -1,0 +1,11 @@
+{
+    "name": "ted/cub_scout",
+    "description": "pack 198",
+    "authors": [
+        {
+            "name": "shred3590",
+            "email": "teds@biblewordstudy.net"
+        }
+    ],
+    "require": {}
+}
