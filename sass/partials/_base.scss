@@ -60,7 +60,12 @@ textarea, input {
 
 }
 
-h1, h2, h3, p {
+h1 {
+	margin: auto;
+	text-align: center;
+}
+
+h2, h3, p {
     margin: 0;
 }
 
@@ -73,10 +78,11 @@ p {
     &.yellow {
         color: $cubYellow;
     }
-    &.no-indent {
+}
+
+.no-indent {
         text-indent: 0;
     }
-}
 
 p #yellow {
     color: $cubYellow;
@@ -85,5 +91,18 @@ p #yellow {
 .pics img {
 	display: inline;
 	width: 22.5%;
-	margin-right: 2.5%;
+	margin: 0.5em 2.5% 0 0;
+	&:nth-child(4n+4) {
+		margin-right: 0;
+		margin-top: 0.5em;
+	}
+}
+
+.slider img {
+	display: block;
+	width: 30%;
+	margin: 0.5em 3.3% 0 0;
+	&:nth-child(3n+3) {
+		margin-right: 0;
+	}
 }
