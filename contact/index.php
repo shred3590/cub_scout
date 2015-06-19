@@ -1,6 +1,6 @@
 <?php
 
-require_once("../inc/config.php");
+//require_once("../inc/config.php");
 
 /* This file contains instructions for three different states of the form:
  *   - Displaying the initial contact form

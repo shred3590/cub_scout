@@ -18,3 +18,4 @@ include_once(ROOT_PATH . "inc/header.php");
 <?php include_once(ROOT_PATH . "inc/footer.php"); ?>
 </div>
 
+<?php include_once(ROOT_PATH . "inc/footer.php"); ?>

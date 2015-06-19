@@ -8,10 +8,11 @@
         <title><?php echo $pageTitle; ?></title>
         <link rel="shortcut icon" href="<?php echo ROOT_PATH . 'favicon.ico' ?>" type="image/x-icon">
         <link rel="icon" href="<?php echo ROOT_PATH . "favicon.ico" ?>" type="image/x-icon">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
         <meta name="description" content="<?php echo $description ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/main.css" media="screen">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="<?php echo BASE_URL; ?>js/vendor/modernizr.custom.85807.js"></script>
     </head>

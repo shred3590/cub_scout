@@ -8,7 +8,7 @@ include_once(ROOT_PATH . "inc/header.php");
 ?>
 <div class="main-container">
 	<h1>Pack 198</h1>
-	<div class="slider responsive">
+	<div class="slider autoplay">
 		<div><?php include(ROOT_PATH . "slider/slide1.php") ?></div>
 		<div><?php include(ROOT_PATH . "slider/slide2.php") ?></div>
 		<div><?php include(ROOT_PATH . "slider/slide3.php") ?></div>
