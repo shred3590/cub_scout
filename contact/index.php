@@ -1,7 +1,8 @@
 <?php
 
-//require_once("../inc/config.php");
-
+require_once("../inc/config.php");
+require(ROOT_PATH . 'vendor/autoload.php');
+date_default_timezone_set('America/Los_Angeles');
 /* This file contains instructions for three different states of the form:
  *   - Displaying the initial contact form
  *   - Handling the form submission and sending the email
@@ -22,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error_message = "You must specify a value for name, email address, and message.";
     }
 
+
     // this code checks for malicious code attempting
     // to inject values into the email header
     if (!isset($error_message)) {
@@ -38,12 +40,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error_message = "Your form submission has an error.";
     }
 
-    require_once(ROOT_PATH . "inc/phpmailer/class.phpmailer.php");
-    $mail = new PHPMailer();
+require_once(ROOT_PATH . 'vendor/phpmailer/phpmailer/class.phpmailer.php');
+	
+    $mail = new PHPMailer(); // The PHP mailer example has no () but the example from Treehouse had PHPMailer().  This may be an error source.
+//	$mail->isSMTP();
+	//Enable SMTP debugging
+	// 0 = off (for production use)
+	// 1 = client messages
+	// 2 = client and server messages
+//	$mail->SMTPDebug = 3;
+
+	//Ask for HTML-friendly debug output
+//	$mail->Debugoutput = 'html';
 
     if (!isset($error_message) && !$mail->ValidateAddress($email)){
         $error_message = "You must specify a valid email address.";
     }
+	
+	//Set the hostname of the mail server
+//	$mail->Host = 'smtp.gmail.com';
+
+	//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+//	$mail->Port = 587;
+
+	//Set the encryption system to use - ssl (deprecated) or tls
+//	$mail->SMTPSecure = 'ssl';
+
+	//Whether to use SMTP authentication
+//	$mail->SMTPAuth = true;
+
+	//Username to use for SMTP authentication - use full email address for gmail
+	$mail->Username = "westtvpack198@gmail.com";
+
+	//Password to use for SMTP authentication
+	$mail->Password = "Pack198Portland";
 
     // if, after all the checks above, there is no message, then we
     // have a valid form submission; let's send the email
@@ -54,11 +84,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email_body = $email_body . "Message: " . $message;
 
         $mail->SetFrom($email, $name);
-        $address = "joy@sifferle.net";
-        $mail->AddAddress($address, "jim@sifferle.net");
-        $mail->AddAddress($address, "teds@biblewordstudy.net");
+        $address = "teds@biblewordstudy.net";
+        $mail->AddAddress($address, "Web Master");
+		$mail->AddAddress('jim@sifferle.net', 'Pack 198 Leader');
+        $mail->AddAddress('joy@sifferle.net', "Information");
         $mail->Subject    = "Cub Scout Pack 198 | " . $name;
+		
         $mail->MsgHTML($email_body);
+		$mail->altBody    = "To view the message, please use an HTML compatible email viewer.";
 
         // if the email is sent successfully, redirect to a thank you page;
         // otherwise, set a new error message

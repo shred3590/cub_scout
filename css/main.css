@@ -397,7 +397,7 @@ td,
 th {
   padding: 0; }
 
-/* line 4, ../sass/partials/_base.scss */
+/* line 5, ../sass/partials/_base.scss */
 html {
   position: relative;
   min-height: 100%;
@@ -407,9 +407,10 @@ html {
   background-image: -moz-linear-gradient(270deg, #fcd116 270px, #003f87 90%);
   background-image: -webkit-linear-gradient(270deg, #fcd116 270px, #003f87 90%);
   background-image: linear-gradient(180deg, #fcd116 270px, #003f87 90%);
-  margin: 0; }
+  max-width: 1350px;
+  margin: auto; }
   @media screen and (min-width: 769px) {
-    /* line 4, ../sass/partials/_base.scss */
+    /* line 5, ../sass/partials/_base.scss */
     html {
       background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxNjBweCIgc3RvcC1jb2xvcj0iI2ZjZDExNiIvPjxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjMDAzZjg3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
       background-size: 100%;
@@ -417,67 +418,68 @@ html {
       background-image: -webkit-linear-gradient(270deg, #fcd116 160px, #003f87 90%);
       background-image: linear-gradient(180deg, #fcd116 160px, #003f87 90%); } }
 
-/* line 17, ../sass/partials/_base.scss */
+/* line 18, ../sass/partials/_base.scss */
 body {
   font: normal 1.1em/1.5 sans-serif;
   color: #003F87;
   margin: 0 0 50px;
   /* bottom = footer height */ }
 
-/* line 23, ../sass/partials/_base.scss */
+/* line 24, ../sass/partials/_base.scss */
 .main-container {
   width: 90%;
   padding: 0 2.5% 0% 2.5%;
   margin: auto;
+  min-height: 500px;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIgc3RvcC1vcGFjaXR5PSIwLjUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
   background-image: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(225, 225, 225, 0.5) 90%);
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(225, 225, 225, 0.5) 90%);
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(225, 225, 225, 0.5) 90%); }
   @media screen and (min-width: 769px) {
-    /* line 23, ../sass/partials/_base.scss */
+    /* line 24, ../sass/partials/_base.scss */
     .main-container {
       margin-top: 160px; } }
 
-/* line 33, ../sass/partials/_base.scss */
+/* line 35, ../sass/partials/_base.scss */
 a {
   text-decoration: none;
   color: #0057ba; }
-  /* line 36, ../sass/partials/_base.scss */
+  /* line 38, ../sass/partials/_base.scss */
   a:focus {
     color: #004ba1; }
-  /* line 39, ../sass/partials/_base.scss */
+  /* line 41, ../sass/partials/_base.scss */
   a:hover {
     color: #feefad; }
 
-/* line 44, ../sass/partials/_base.scss */
+/* line 46, ../sass/partials/_base.scss */
 li {
   list-style: none; }
 
-/* line 48, ../sass/partials/_base.scss */
+/* line 50, ../sass/partials/_base.scss */
 form {
   width: 90%;
   margin: auto;
   box-sizing: border-box; }
-  /* line 52, ../sass/partials/_base.scss */
+  /* line 54, ../sass/partials/_base.scss */
   form td {
     padding: 5px 0 5px 10px; }
 
-/* line 57, ../sass/partials/_base.scss */
+/* line 59, ../sass/partials/_base.scss */
 textarea, input {
   min-width: 220px;
   width: 80%; }
 
-/* line 63, ../sass/partials/_base.scss */
+/* line 65, ../sass/partials/_base.scss */
 h1 {
   margin: auto;
   text-align: center; }
 
-/* line 68, ../sass/partials/_base.scss */
+/* line 70, ../sass/partials/_base.scss */
 h2, h3, p {
   margin: 0; }
 
-/* line 72, ../sass/partials/_base.scss */
+/* line 74, ../sass/partials/_base.scss */
 .group {
   clear: both; }
   /* line 17, ../sass/modules/_mixins.scss */
@@ -485,39 +487,56 @@ h2, h3, p {
     content: '';
     display: table; }
 
-/* line 76, ../sass/partials/_base.scss */
+/* line 78, ../sass/partials/_base.scss */
 p {
   text-indent: 50px; }
-  /* line 78, ../sass/partials/_base.scss */
+  /* line 80, ../sass/partials/_base.scss */
   p.yellow {
     color: #FCD116; }
 
-/* line 83, ../sass/partials/_base.scss */
+/* line 85, ../sass/partials/_base.scss */
 .no-indent {
   text-indent: 0; }
 
-/* line 87, ../sass/partials/_base.scss */
+/* line 89, ../sass/partials/_base.scss */
 p #yellow {
   color: #FCD116; }
 
-/* line 91, ../sass/partials/_base.scss */
+/* line 93, ../sass/partials/_base.scss */
+.carousel-item img {
+  max-width: 100%;
+  max-height: 400px;
+  margin: auto; }
+
+/* line 101, ../sass/partials/_base.scss */
 .pics img {
   display: inline;
-  width: 22.5%;
+  width: 85%;
   margin: 0.5em 2.5% 0 0; }
-  /* line 95, ../sass/partials/_base.scss */
+  /* line 105, ../sass/partials/_base.scss */
   .pics img:nth-child(4n+4) {
     margin-right: 0;
     margin-top: 0.5em; }
 
-/* line 101, ../sass/partials/_base.scss */
-.slider img {
+/* line 111, ../sass/partials/_base.scss */
+.carousel {
   display: block;
-  width: 30%;
-  margin: 0.5em 3.3% 0 0; }
-  /* line 105, ../sass/partials/_base.scss */
-  .slider img:nth-child(3n+3) {
-    margin-right: 0; }
+  width: 80%;
+  margin: auto;
+  min-height: 425px;
+  clear: both; }
+  /* line 17, ../sass/modules/_mixins.scss */
+  .carousel::after {
+    content: '';
+    display: table; }
+  @media screen and (min-width: 769px) {
+    /* line 111, ../sass/partials/_base.scss */
+    .carousel {
+      display: inline;
+      float: left;
+      width: 40%;
+      margin: 20px;
+      min-height: 400px; } }
 
 /* line 3, ../sass/partials/_nav.scss */
 .main-header {
@@ -541,15 +560,17 @@ nav {
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
   padding: 20px 20px; }
-  /* line 24, ../sass/partials/_nav.scss */
+  /* line 25, ../sass/partials/_nav.scss */
   nav ul {
     display: -webkit-flex;
     display: flex;
     height: 100%;
     -webkit-flex-direction: column;
     flex-direction: column; }
-    /* line 28, ../sass/partials/_nav.scss */
+    /* line 29, ../sass/partials/_nav.scss */
     nav ul li {
       -webkit-align-self: stretch;
       align-self: stretch;
@@ -557,13 +578,13 @@ nav {
       flex-grow: 1;
       margin: 0 8px; }
   @media screen and (min-width: 769px) {
-    /* line 36, ../sass/partials/_nav.scss */
+    /* line 37, ../sass/partials/_nav.scss */
     nav ul {
       -webkit-flex-direction: row;
       flex-direction: row;
       -webkit-flex-wrap: wrap;
       flex-wrap: wrap; }
-      /* line 39, ../sass/partials/_nav.scss */
+      /* line 40, ../sass/partials/_nav.scss */
       nav ul li {
         -webkit-align-self: center;
         align-self: center;
@@ -577,16 +598,16 @@ nav {
         background-image: -moz-radial-gradient(#003f87, #006eec);
         background-image: -webkit-radial-gradient(#003f87, #006eec);
         background-image: radial-gradient(#003f87, #006eec); }
-        /* line 47, ../sass/partials/_nav.scss */
+        /* line 48, ../sass/partials/_nav.scss */
         nav ul li a {
           color: #FCD116; } }
   @media screen and (min-width: 1000px) {
-    /* line 59, ../sass/partials/_nav.scss */
+    /* line 60, ../sass/partials/_nav.scss */
     nav ul li {
       font-size: .8em;
       padding: 10px; } }
 
-/* line 66, ../sass/partials/_nav.scss */
+/* line 67, ../sass/partials/_nav.scss */
 .main-logo:first-child {
   margin-right: 50px;
   flex-grow: 1.5; }
@@ -801,3 +822,109 @@ footer {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+
+/* Here's where our carousel begins, with the main wrapper being
+relatively positioned, so that our absolutely positioned items are
+in the right place. */
+/* line 4, ../sass/partials/_carousel.scss */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 10px;
+  clear: both;
+  /* Our absolutely positioned carousel items span the width and
+  height of its parent. We're making them transparent by default so
+  that they fade in when we cycle through them using the arrow links. */
+  /* Let's set our jump link targets display: none; so that we're not
+  making the browser jump to the top of the carousel whenever a user
+  clicks on one of our arrow links. This attribute selector will target
+  any element whose id starts with 'target-item'. */
+  /* So, up above we made all our carousel items transparent, which means
+  that on page-load, we'd have a big empty box where our carousel should be.
+  Let's set our first item's opacity to 1 so that it displays instead. Also,
+  we're setting its z-index to 2, so that it's positioned on top of the
+  other carousel items. */
+  /* But we don't want the first item to ALAWYS be opacity: 1; otherwise
+  it would peek through when cycling between items two and above. */
+  /* ...but if #target-item-1 is targeted, well we do want the first item
+  to show up, so we're selecting it with the ~ sibling selector and
+  setting its opacity to 1 again :-) */
+  /* If any other target-item-# is targeted, let's select it using the sibling
+  selector, make it fade in, and place it on top of the pile using z-index: 3.
+  Here's where you'd add more target items if your carousel has more than three
+  items. It might be worth adding like 10 items right off the bat. */ }
+  /* line 17, ../sass/modules/_mixins.scss */
+  .carousel-wrapper::after {
+    content: '';
+    display: table; }
+  /* line 14, ../sass/partials/_carousel.scss */
+  .carousel-wrapper .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 050px;
+    padding: 10px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    /* Did you notice the 50px left, right padding up above? It's so
+    we can position our arrow links! Each one will be 50px wide. Also,
+    I'm using empty links with a background image so that the links
+    look like arrows. Make sure you swap out that URL with an actual
+    URL so that your arrow links aren't just transparent rectangles. */
+    /* I really like how these carousel items look on a dark image
+    background, so if a .carousel-item div has the class 'light',
+    we'll make its text color white, and use a white arrow instad of
+    a dark gray one. Again, make sure this arrow image exists somewhere */
+    /* Let's use using some media queries to resize the arrows
+    on smaller devices.*/ }
+    /* line 30, ../sass/partials/_carousel.scss */
+    .carousel-wrapper .carousel-item .arrow {
+      position: absolute;
+      top: 70%;
+      display: block;
+      width: 10%;
+      height: 100%;
+      -webkit-tap-highlight-color: transparent;
+      background: url("../img/carousel-arrow-dark.png") 50% 50%/20px no-repeat;
+      /* Let's put our arrow to go back on the left. */
+      /* And our arrow to go forward on the right. Since I'm using
+      the same arrow image for both my arrows, I'm rotating this one by
+      180 degrees so that it points in the right direction */ }
+      /* line 40, ../sass/partials/_carousel.scss */
+      .carousel-wrapper .carousel-item .arrow.arrow-prev {
+        left: 0; }
+      /* line 47, ../sass/partials/_carousel.scss */
+      .carousel-wrapper .carousel-item .arrow.arrow-next {
+        right: 0;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+    /* line 58, ../sass/partials/_carousel.scss */
+    .carousel-wrapper .carousel-item.light {
+      color: white; }
+      /* line 60, ../sass/partials/_carousel.scss */
+      .carousel-wrapper .carousel-item.light .arrow {
+        background: url("../img/carousel-arrow-light.png") 50% 50%/20px no-repeat; }
+    @media (max-width: 480px) {
+      /* line 68, ../sass/partials/_carousel.scss */
+      .carousel-wrapper .carousel-item .arrow, .carousel-wrapper .carousel-item.light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%; } }
+  /* line 79, ../sass/partials/_carousel.scss */
+  .carousel-wrapper [id^="target-item"] {
+    display: none; }
+  /* line 88, ../sass/partials/_carousel.scss */
+  .carousel-wrapper .item-1 {
+    z-index: 2;
+    opacity: 1; }
+  /* line 95, ../sass/partials/_carousel.scss */
+  .carousel-wrapper *:target ~ .item-1 {
+    opacity: 0; }
+  /* line 102, ../sass/partials/_carousel.scss */
+  .carousel-wrapper #target-item-1:target ~ .item-1 {
+    opacity: 1; }
+  /* line 110, ../sass/partials/_carousel.scss */
+  .carousel-wrapper #target-item-2:target ~ .item-2, .carousel-wrapper #target-item-3:target ~ .item-3, .carousel-wrapper #target-item-4:target ~ .item-4, .carousel-wrapper #target-item-5:target ~ .item-5 {
+    z-index: 3;
+    opacity: 1; }

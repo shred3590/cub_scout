@@ -1,0 +1,1 @@
+[22-Jun-2015 09:18:16 America/Los_Angeles] PHP Fatal error:  Class 'SMTP' not found in /home4/sumnerl1/public_html/vetsrights/vendor/phpmailer/phpmailer/class.phpmailer.php on line 1235

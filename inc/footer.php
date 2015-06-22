@@ -1,11 +1,12 @@
 
     <footer>
-        <p class="no-indent">&copy;2015 Ted Sumner, site designer</p>
+        <p class="no-indent">&copy;2015 <a href="http://shred3590.github.io" target="_blank">Ted Sumner</a>, site designer</p>
     </footer>
 
     </div>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--
 <script src="slick/slick.min.js"></script>
 <script>
 	$('.autoplay').slick({
@@ -15,6 +16,7 @@
 	  autoplaySpeed: 2000,
 	});
 </script>
+-->
 
     <!-- /container -->
 <!--

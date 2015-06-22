@@ -1,6 +1,8 @@
 @import "partials/_normalize.scss";
 //compass
 @import "compass/css3";
+@import "compass/utilities";
+@import "compass/layout";
 //variables and setup
 @import "modules/_var.scss";
 //base and nav
@@ -11,3 +13,5 @@
 @import "partials/_footer.scss";
 //Slick Carousel
 @import "partials/_slick-theme.scss";
+//HTML only Carousel
+@import "partials/_carousel.scss";
