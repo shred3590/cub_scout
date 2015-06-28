@@ -1,0 +1,7 @@
+[2015-06-14 17:29:25] name.WARNING: Foo [] []
+[2015-06-14 17:30:51] name.WARNING: Foo [] []
+[2015-06-14 08:35:29] name.WARNING: Foo [] []
+[2015-06-14 08:36:16] name.WARNING: Foo [] []
+[2015-06-14 08:41:32] name.WARNING: Foo [] []
+[2015-06-14 08:45:50] name.WARNING: Foo [] []
+[2015-06-14 08:46:52] name.WARNING: crap [] []
