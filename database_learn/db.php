@@ -43,7 +43,7 @@ try {
 
 //list database contents with checkboxes
 function full_scout_list() {
-
+	require('dbCall.php');
 //	require(ROOT_PATH . "inc/database.php");
 
 	try {
@@ -51,17 +51,20 @@ function full_scout_list() {
 				SELECT FirstName, LastName, Den, Bobcat, Tiger, Wolf, Bear, Webelo, Arrow, Health, id
 				FROM scouts
 				ORDER BY Den DESC, LastName");
-	} catch (Exception $e) {
-		echo $e->getMessage() . " Line 52";
-//		exit;
-	}
-	$scouts = array(array());
-	$scouts = $results->fetchAll(PDO::FETCH_ASSOC);
+		$scouts = array(array());
+		$scouts = $results->fetchAll(PDO::FETCH_ASSOC);
 //	$recent = array_reverse($recent);
     return $scouts;
-//var_dump($scouts);
+	} catch (Exception $e) {
+		echo $e->getMessage() . " Line 52";
+		exit;
+	}
+
+
 }
 
+$scouts = full_scout_list();
+var_dump($scouts);
 
 // submit checkboxes to be stored in database
 
@@ -84,3 +87,8 @@ function full_scout_list() {
 		// some choices tree from above?
 
 // display child's progress toward completion of each task and badge.  Probably one of the JavaScript solutions in downloads.
+
+//test function
+function hello() {
+	echo "hello, World";
+}
