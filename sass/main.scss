@@ -5,13 +5,15 @@
 @import "compass/layout";
 //variables and setup
 @import "modules/_var.scss";
+//Slick Carousel
+@import "../slick/_slick.scss";
+@import "../slick/slick-theme.scss";
 //base and nav
 @import "partials/_base.scss";
 @import "partials/_nav.scss";
 //specialty partials
 @import "partials/_iframe.scss";
 @import "partials/_footer.scss";
-//Slick Carousel
-@import "partials/_slick-theme.scss";
+
 //HTML only Carousel
 @import "partials/_carousel.scss";

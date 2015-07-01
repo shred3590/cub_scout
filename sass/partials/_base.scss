@@ -110,15 +110,19 @@ p #yellow {
 
 .carousel {
 	display: block;
-	width: 80%;
-	margin: auto;
-	min-height: 425px;
+	width: 100%;
+//	margin: auto;
+	height: 425px;
+	& img {
+		width: 80%;
+		margin: auto;
+	}
 	@include clearfix();
 	@media screen and (min-width: $med-break) {
 		display: inline;
 		float: left;
 		width: 40%;
-		margin: 20px;
-		min-height: 400px;
+		margin: 0 40px 0 0;
+		height: 400px;
 	}
 }
