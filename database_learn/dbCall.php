@@ -5,6 +5,6 @@ try {
 
 
 } catch (Exception $e) {
-	echo $e->getMessage() . " Line 13";
+	echo $e->getMessage() . " dbCall Line 13";
 	exit;
 }

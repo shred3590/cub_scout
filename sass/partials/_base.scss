@@ -122,3 +122,20 @@ p #yellow {
 		min-height: 400px;
 	}
 }
+
+table {
+	//@include table-scaffolding;
+
+	td,
+	th {
+		text-align: right;
+		padding: 5px 10px;
+		border: 1px solid $cubBlue;
+	}
+	th.row {
+		text-align: left;
+	}
+	th.heading {
+		text-align: center;
+	}
+}

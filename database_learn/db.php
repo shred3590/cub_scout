@@ -53,18 +53,31 @@ function full_scout_list() {
 				ORDER BY Den DESC, LastName");
 		$scouts = array(array());
 		$scouts = $results->fetchAll(PDO::FETCH_ASSOC);
-//	$recent = array_reverse($recent);
-    return $scouts;
+	//	$recent = array_reverse($recent);
+		return $scouts;
 	} catch (Exception $e) {
-		echo $e->getMessage() . " Line 52";
+		echo $e->getMessage() . "db.php full_scout_list Line 52";
 		exit;
 	}
-
-
 }
 
-$scouts = full_scout_list();
-var_dump($scouts);
+function requirements_db ($table) {
+	require('dbCall.php');
+	try {
+		// make sure this is up to date with final database structure
+		$results = $db->query("
+			SELECT *
+			FROM $table
+			ORDER BY mandatory, optional
+			");
+		$dbReq = array(array());
+		$dbReq = $results->fetchAll(PDO::FETCH_ASSOC);
+		return $dbReq;
+	} catch (Exception $e) {
+		echo $e->getMessage() . ' db.php create_db function';
+		exit;
+	}
+}
 
 // submit checkboxes to be stored in database
 
