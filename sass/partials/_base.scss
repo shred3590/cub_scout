@@ -90,7 +90,7 @@ p #yellow {
     color: $cubYellow;
 }
 
-.carousel-item img{
+.carousel img{
 	max-width: 100%;
 	max-height: 400px;
 	margin: auto;
@@ -108,21 +108,21 @@ p #yellow {
 	}
 }
 
-.carousel {
-	display: block;
-	width: 100%;
+//.carousel {
+//	display: block;
+//	width: 100%;
 //	margin: auto;
-	height: 425px;
-	& img {
-		width: 80%;
-		margin: auto;
-	}
-	@include clearfix();
-	@media screen and (min-width: $med-break) {
-		display: inline;
-		float: left;
-		width: 40%;
-		margin: 0 40px 0 0;
-		height: 400px;
-	}
-}
+//	height: 425px;
+//	& img {
+//		width: 80%;
+//		margin: auto;
+//	}
+//	@include clearfix();
+//	@media screen and (min-width: $med-break) {
+//		display: inline;
+//		float: left;
+//		width: 40%;
+//		margin: 0 40px 0 0;
+//		height: 400px;
+//	}
+//}

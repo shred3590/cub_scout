@@ -4,16 +4,17 @@
     </footer>
 
     </div>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="slick/slick.min.js"></script>
-<script>
-	$('.carousel').slick(){
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 2000,
-	};
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"/>
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"/>-->
+<script type="text/javascript" src=<?php echo ROOT_PATH ?> "slick/slick.min.js"/>
+<script type="text/javascript">
+	$document.ready(function(){})
+		$('.carousel').slick({
+			 infinite: true,
+			  slidesToShow: 3,
+			  slidesToScroll: 3
+		});
+	});
 </script>
 
     <!-- /container -->
