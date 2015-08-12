@@ -10,34 +10,8 @@ $name = '"root"';
 try {
 	$db = new PDO("mysql:host=localhost;dbname=cubScout;charset=utf8mb4","root","");
 	$db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-
-
 } catch (Exception $e) {
 	echo $e->getMessage() . " Line 13";
-	exit;
-}
-
-// Create tables if they do not already exist
-
-try {
-	$sql ='CREATE TABLE IF NOT EXISTS scouts (
-		id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-		FirstName VARCHAR( 50 ) NOT NULL,
-		LastName VARCHAR( 50 ) NOT NULL,
-		Den VARCHAR( 2 ) NOT NULL,
-		Bobcat VARCHAR( 150 ),
-		Tiger VARCHAR( 150 ),
-		Wolf VARCHAR( 100 ),
-		Bear VARCHAR( 100 ),
-		Webelo VARCHAR( 100 ),
-		Arrow VARCHAR( 100 ),
-		Health VARCHAR( 500 ),
-		CampMoney DECIMAL(5,2))';
-    $db->exec($sql);
-	$db->exec("SET NAMES 'utf8mb4'");
-//    echo "Created Table.\n";
-} catch (Exception $e) {
-	echo $e->getMessage() . " Line 37";
 	exit;
 }
 
@@ -51,7 +25,7 @@ function full_scout_list() {
 				SELECT FirstName, LastName, Den, Bobcat, Tiger, Wolf, Bear, Webelo, Arrow, Health, id
 				FROM scouts
 				ORDER BY Den DESC, LastName");
-		$scouts = array(array());
+		// $scouts = array(array());
 		$scouts = $results->fetchAll(PDO::FETCH_ASSOC);
 	//	$recent = array_reverse($recent);
 		return $scouts;
@@ -61,23 +35,23 @@ function full_scout_list() {
 	}
 }
 
-function requirements_db ($table) {
-	require('dbCall.php');
-	try {
-		// make sure this is up to date with final database structure
-		$results = $db->query("
-			SELECT *
-			FROM $table
-			ORDER BY mandatory, optional
-			");
-		$dbReq = array(array());
-		$dbReq = $results->fetchAll(PDO::FETCH_ASSOC);
-		return $dbReq;
-	} catch (Exception $e) {
-		echo $e->getMessage() . ' db.php create_db function';
-		exit;
-	}
-}
+//function requirements_db ($table) {
+//	require('dbCall.php');
+//	try {
+//		// make sure this is up to date with final database structure
+//		$results = $db->query("
+//			SELECT *
+//			FROM $table
+//			ORDER BY mandatory, optional
+//			");
+//		$dbReq = array(array());
+//		$dbReq = $results->fetchAll(PDO::FETCH_ASSOC);
+//		return $dbReq;
+//	} catch (Exception $e) {
+//		echo $e->getMessage() . ' db.php create_db function';
+//		exit;
+//	}
+//}
 
 // submit checkboxes to be stored in database
 

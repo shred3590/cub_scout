@@ -2,6 +2,7 @@
 //This file is to test returns and formatting for arrays
 
 require_once('../inc/config.php');
+require('Database.php');
 
 
 require(ROOT_PATH . 'inc/header.php');
@@ -18,6 +19,21 @@ require(ROOT_PATH . 'inc/header.php');
 ?>
 		</tbody>
 	</table>
+	<?php
+//		var_dump($t);
+		echo '<br>';
+		$result = array(array());
+		$r = new Database();
+		$r->dbConnect();
+		$results = $r->selectAll('scouts');
+		var_dump($results);
+		
+//	foreach ($scouts as $scout) {
+//		echo "<h3>" . $scout['firstName'] . "</h3><br>";
+//	}
+
+
+	?>
 </div>
 
 <?php
