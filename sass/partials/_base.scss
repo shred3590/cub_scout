@@ -112,14 +112,14 @@ p #yellow {
 	display: block;
 	width: 80%;
 	margin: auto;
-	min-height: 425px;
+	max-height: 425px;
 	@include clearfix();
 	@media screen and (min-width: $med-break) {
-		display: inline;
+		display: inline-block;
 		float: left;
 		width: 40%;
 		margin: 20px;
-		min-height: 400px;
+		height: auto;
 	}
 }
 
@@ -130,7 +130,7 @@ table {
 	th {
 		text-align: right;
 		padding: 5px 10px;
-		border: 1px solid $cubBlue;
+//		border: 1px solid $cubBlue;
 	}
 	th.row {
 		text-align: left;
@@ -138,4 +138,9 @@ table {
 	th.heading {
 		text-align: center;
 	}
+}
+
+.slide img {
+    max-width: 90%;
+    height: auto;
 }

@@ -1,3 +1,4 @@
 /vendor/
 pass.php
 /database_learn/dbConfig.php
+/inc/config.php

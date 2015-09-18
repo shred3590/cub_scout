@@ -6,17 +6,17 @@
     </div>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<!--
 <script src="slick/slick.min.js"></script>
 <script>
-	$('.autoplay').slick({
-	  slidesToShow: 3,
-	  slidesToScroll: 1,
-	  autoplay: true,
-	  autoplaySpeed: 2000,
-	});
+    $(document).ready(function(){
+        $('.auto-play').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+        });
+    });
 </script>
--->
 
     <!-- /container -->
 <!--

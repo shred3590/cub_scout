@@ -15,4 +15,8 @@
         <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/main.css" media="screen">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="<?php echo BASE_URL; ?>js/vendor/modernizr.custom.85807.js"></script>
+<!--
+        <link rel="stylesheet" href="slick/slick.css"/>
+        <link rel="stylesheet" href="slick/slick-theme.css"/>
+-->
     </head>

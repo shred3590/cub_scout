@@ -12,6 +12,7 @@
 @import "partials/_iframe.scss";
 @import "partials/_footer.scss";
 //Slick Carousel
-@import "partials/_slick-theme.scss";
+@import "../slick/_slick.scss";
+@import "../slick/_slick-theme.scss";
 //HTML only Carousel
-@import "partials/_carousel.scss";
+//@import "partials/_carousel.scss";

@@ -523,7 +523,7 @@ p #yellow {
   display: block;
   width: 80%;
   margin: auto;
-  min-height: 425px;
+  max-height: 425px;
   clear: both; }
   /* line 17, ../sass/modules/_mixins.scss */
   .carousel::after {
@@ -532,24 +532,28 @@ p #yellow {
   @media screen and (min-width: 769px) {
     /* line 111, ../sass/partials/_base.scss */
     .carousel {
-      display: inline;
+      display: inline-block;
       float: left;
       width: 40%;
       margin: 20px;
-      min-height: 400px; } }
+      height: auto; } }
 
 /* line 129, ../sass/partials/_base.scss */
 table td,
 table th {
   text-align: right;
-  padding: 5px 10px;
-  border: 1px solid #003F87; }
+  padding: 5px 10px; }
 /* line 135, ../sass/partials/_base.scss */
 table th.row {
   text-align: left; }
 /* line 138, ../sass/partials/_base.scss */
 table th.heading {
   text-align: center; }
+
+/* line 143, ../sass/partials/_base.scss */
+.slide img {
+  max-width: 90%;
+  height: auto; }
 
 /* line 3, ../sass/partials/_nav.scss */
 .main-header {
@@ -682,14 +686,100 @@ footer {
     margin: auto;
     padding-top: 16.66667px; }
 
-/* line 37, ../sass/partials/_slick-theme.scss */
-.slider {
-  display: inline;
-  width: 90%;
-  margin: auto; }
+/* Slider */
+/* line 3, ../slick/_slick.scss */
+script {
+  overflow: hidden; }
+
+/* line 8, ../slick/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 23, ../slick/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  /* line 30, ../slick/_slick.scss */
+  .slick-list:focus {
+    outline: none; }
+  /* line 34, ../slick/_slick.scss */
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+/* line 39, ../slick/_slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 48, ../slick/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  /* line 54, ../slick/_slick.scss */
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  /* line 60, ../slick/_slick.scss */
+  .slick-track:after {
+    clear: both; }
+  /* line 64, ../slick/_slick.scss */
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+/* line 68, ../slick/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  /* line 72, ../slick/_slick.scss */
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  /* line 75, ../slick/_slick.scss */
+  .slick-slide img {
+    display: block; }
+  /* line 78, ../slick/_slick.scss */
+  .slick-slide.slick-loading img {
+    display: none; }
+  /* line 84, ../slick/_slick.scss */
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  /* line 88, ../slick/_slick.scss */
+  .slick-initialized .slick-slide {
+    display: block; }
+  /* line 92, ../slick/_slick.scss */
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  /* line 96, ../slick/_slick.scss */
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
 
 /* Slider */
-/* line 46, ../sass/partials/_slick-theme.scss */
+/* line 40, ../slick/_slick-theme.scss */
 .slick-loading .slick-list {
   background: #fff url('/img/ajax-loader.gif?1435013072') center center no-repeat; }
 
@@ -701,7 +791,7 @@ footer {
   font-weight: normal;
   font-style: normal; }
 /* Arrows */
-/* line 64, ../sass/partials/_slick-theme.scss */
+/* line 58, ../slick/_slick-theme.scss */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -718,24 +808,24 @@ footer {
   padding: 0;
   border: none;
   outline: none; }
-  /* line 80, ../sass/partials/_slick-theme.scss */
+  /* line 74, ../slick/_slick-theme.scss */
   .slick-prev:hover, .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
     outline: none;
     background: transparent;
     color: transparent; }
-    /* line 84, ../sass/partials/_slick-theme.scss */
+    /* line 78, ../slick/_slick-theme.scss */
     .slick-prev:hover:before, .slick-prev:focus:before,
     .slick-next:hover:before,
     .slick-next:focus:before {
       opacity: 1; }
-  /* line 88, ../sass/partials/_slick-theme.scss */
+  /* line 82, ../slick/_slick-theme.scss */
   .slick-prev.slick-disabled:before,
   .slick-next.slick-disabled:before {
     opacity: 0.25; }
 
-/* line 93, ../sass/partials/_slick-theme.scss */
+/* line 87, ../slick/_slick-theme.scss */
 .slick-prev:before, .slick-next:before {
   font-family: "slick";
   font-size: 20px;
@@ -745,40 +835,40 @@ footer {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 103, ../sass/partials/_slick-theme.scss */
+/* line 97, ../slick/_slick-theme.scss */
 .slick-prev {
   left: -25px; }
-  /* line 105, ../sass/partials/_slick-theme.scss */
+  /* line 99, ../slick/_slick-theme.scss */
   [dir="rtl"] .slick-prev {
     left: auto;
     right: -25px; }
-  /* line 109, ../sass/partials/_slick-theme.scss */
+  /* line 103, ../slick/_slick-theme.scss */
   .slick-prev:before {
     content: "←"; }
-    /* line 111, ../sass/partials/_slick-theme.scss */
+    /* line 105, ../slick/_slick-theme.scss */
     [dir="rtl"] .slick-prev:before {
       content: "→"; }
 
-/* line 117, ../sass/partials/_slick-theme.scss */
+/* line 111, ../slick/_slick-theme.scss */
 .slick-next {
   right: -25px; }
-  /* line 119, ../sass/partials/_slick-theme.scss */
+  /* line 113, ../slick/_slick-theme.scss */
   [dir="rtl"] .slick-next {
     left: -25px;
     right: auto; }
-  /* line 123, ../sass/partials/_slick-theme.scss */
+  /* line 117, ../slick/_slick-theme.scss */
   .slick-next:before {
     content: "→"; }
-    /* line 125, ../sass/partials/_slick-theme.scss */
+    /* line 119, ../slick/_slick-theme.scss */
     [dir="rtl"] .slick-next:before {
       content: "←"; }
 
 /* Dots */
-/* line 133, ../sass/partials/_slick-theme.scss */
+/* line 127, ../slick/_slick-theme.scss */
 .slick-slider {
   margin-bottom: 30px; }
 
-/* line 137, ../sass/partials/_slick-theme.scss */
+/* line 131, ../slick/_slick-theme.scss */
 .slick-dots {
   position: absolute;
   bottom: -45px;
@@ -787,7 +877,7 @@ footer {
   text-align: center;
   padding: 0;
   width: 100%; }
-  /* line 145, ../sass/partials/_slick-theme.scss */
+  /* line 139, ../slick/_slick-theme.scss */
   .slick-dots li {
     position: relative;
     display: inline-block;
@@ -796,7 +886,7 @@ footer {
     margin: 0 5px;
     padding: 0;
     cursor: pointer; }
-    /* line 153, ../sass/partials/_slick-theme.scss */
+    /* line 147, ../slick/_slick-theme.scss */
     .slick-dots li button {
       border: 0;
       background: transparent;
@@ -809,13 +899,13 @@ footer {
       color: transparent;
       padding: 5px;
       cursor: pointer; }
-      /* line 165, ../sass/partials/_slick-theme.scss */
+      /* line 159, ../slick/_slick-theme.scss */
       .slick-dots li button:hover, .slick-dots li button:focus {
         outline: none; }
-        /* line 167, ../sass/partials/_slick-theme.scss */
+        /* line 161, ../slick/_slick-theme.scss */
         .slick-dots li button:hover:before, .slick-dots li button:focus:before {
           opacity: 1; }
-      /* line 171, ../sass/partials/_slick-theme.scss */
+      /* line 165, ../slick/_slick-theme.scss */
       .slick-dots li button:before {
         position: absolute;
         top: 0;
@@ -831,113 +921,7 @@ footer {
         opacity: 0.25;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
-    /* line 188, ../sass/partials/_slick-theme.scss */
+    /* line 182, ../slick/_slick-theme.scss */
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
-
-/* Here's where our carousel begins, with the main wrapper being
-relatively positioned, so that our absolutely positioned items are
-in the right place. */
-/* line 4, ../sass/partials/_carousel.scss */
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
-  margin: 10px;
-  clear: both;
-  /* Our absolutely positioned carousel items span the width and
-  height of its parent. We're making them transparent by default so
-  that they fade in when we cycle through them using the arrow links. */
-  /* Let's set our jump link targets display: none; so that we're not
-  making the browser jump to the top of the carousel whenever a user
-  clicks on one of our arrow links. This attribute selector will target
-  any element whose id starts with 'target-item'. */
-  /* So, up above we made all our carousel items transparent, which means
-  that on page-load, we'd have a big empty box where our carousel should be.
-  Let's set our first item's opacity to 1 so that it displays instead. Also,
-  we're setting its z-index to 2, so that it's positioned on top of the
-  other carousel items. */
-  /* But we don't want the first item to ALAWYS be opacity: 1; otherwise
-  it would peek through when cycling between items two and above. */
-  /* ...but if #target-item-1 is targeted, well we do want the first item
-  to show up, so we're selecting it with the ~ sibling selector and
-  setting its opacity to 1 again :-) */
-  /* If any other target-item-# is targeted, let's select it using the sibling
-  selector, make it fade in, and place it on top of the pile using z-index: 3.
-  Here's where you'd add more target items if your carousel has more than three
-  items. It might be worth adding like 10 items right off the bat. */ }
-  /* line 17, ../sass/modules/_mixins.scss */
-  .carousel-wrapper::after {
-    content: '';
-    display: table; }
-  /* line 14, ../sass/partials/_carousel.scss */
-  .carousel-wrapper .carousel-item {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    min-height: 050px;
-    padding: 10px 50px;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    /* Did you notice the 50px left, right padding up above? It's so
-    we can position our arrow links! Each one will be 50px wide. Also,
-    I'm using empty links with a background image so that the links
-    look like arrows. Make sure you swap out that URL with an actual
-    URL so that your arrow links aren't just transparent rectangles. */
-    /* I really like how these carousel items look on a dark image
-    background, so if a .carousel-item div has the class 'light',
-    we'll make its text color white, and use a white arrow instad of
-    a dark gray one. Again, make sure this arrow image exists somewhere */
-    /* Let's use using some media queries to resize the arrows
-    on smaller devices.*/ }
-    /* line 30, ../sass/partials/_carousel.scss */
-    .carousel-wrapper .carousel-item .arrow {
-      position: absolute;
-      top: 70%;
-      display: block;
-      width: 10%;
-      height: 100%;
-      -webkit-tap-highlight-color: transparent;
-      background: url("../img/carousel-arrow-dark.png") 50% 50%/20px no-repeat;
-      /* Let's put our arrow to go back on the left. */
-      /* And our arrow to go forward on the right. Since I'm using
-      the same arrow image for both my arrows, I'm rotating this one by
-      180 degrees so that it points in the right direction */ }
-      /* line 40, ../sass/partials/_carousel.scss */
-      .carousel-wrapper .carousel-item .arrow.arrow-prev {
-        left: 0; }
-      /* line 47, ../sass/partials/_carousel.scss */
-      .carousel-wrapper .carousel-item .arrow.arrow-next {
-        right: 0;
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg); }
-    /* line 58, ../sass/partials/_carousel.scss */
-    .carousel-wrapper .carousel-item.light {
-      color: white; }
-      /* line 60, ../sass/partials/_carousel.scss */
-      .carousel-wrapper .carousel-item.light .arrow {
-        background: url("../img/carousel-arrow-light.png") 50% 50%/20px no-repeat; }
-    @media (max-width: 480px) {
-      /* line 68, ../sass/partials/_carousel.scss */
-      .carousel-wrapper .carousel-item .arrow, .carousel-wrapper .carousel-item.light .arrow {
-        background-size: 10px;
-        background-position: 10px 50%; } }
-  /* line 79, ../sass/partials/_carousel.scss */
-  .carousel-wrapper [id^="target-item"] {
-    display: none; }
-  /* line 88, ../sass/partials/_carousel.scss */
-  .carousel-wrapper .item-1 {
-    z-index: 2;
-    opacity: 1; }
-  /* line 95, ../sass/partials/_carousel.scss */
-  .carousel-wrapper *:target ~ .item-1 {
-    opacity: 0; }
-  /* line 102, ../sass/partials/_carousel.scss */
-  .carousel-wrapper #target-item-1:target ~ .item-1 {
-    opacity: 1; }
-  /* line 110, ../sass/partials/_carousel.scss */
-  .carousel-wrapper #target-item-2:target ~ .item-2, .carousel-wrapper #target-item-3:target ~ .item-3, .carousel-wrapper #target-item-4:target ~ .item-4, .carousel-wrapper #target-item-5:target ~ .item-5 {
-    z-index: 3;
-    opacity: 1; }
